@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\Network\_Classes\ControlNode.cs~RF77b1e512.TMP" />
+    <None Remove="src\Network\_Structs\TemporalPeriod.cs~RF9be04950.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="StronglyTypedId" Version="0.2.1" PrivateAssets="all" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\GF.Graph\GF.Graph\GF.Graph.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+{
+  "characters": {
+    "A": {
+      "_bytes": "AAAAGDxmZn5mZmZmZgAAAA==",
+      "name": "A"
+    },
+    "B": {
+      "_bytes": "AAAAP2ZmZj5mZmZmPwAAAA==",
+      "name": "B"
+    },
+    "C": {
+      "_bytes": "AAAAPmNjAwMDAwNjPgAAAA==",
+      "name": "C"
+    },
+    "D": {
+      "_bytes": "AAAAHzZmZmZmZmY2HwAAAA==",
+      "name": "D"
+    },
+    "E": {
+      "_bytes": "AAAAf2YGFh4WBgZmfwAAAA==",
+      "name": "E"
+    },
+    "F": {
+      "_bytes": "AAAAf2YGFh4gBgYGDwAAAA==",
+      "name": "F"
+    }
+  }
+}
