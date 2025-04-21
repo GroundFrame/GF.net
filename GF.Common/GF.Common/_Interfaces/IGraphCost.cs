@@ -13,12 +13,12 @@ namespace GF.Common
         /// <summary>
         /// Returns the maximum possible length.
         /// </summary>
-        public static TCost MaxValue { get; }
+        public static abstract TCost MaxValue { get; }
 
         /// <summary>
         /// Returns the minumum possible length.
         /// </summary>
-        public static TCost MinValue { get; }
+        public static abstract TCost MinValue { get; }
 
         /// <summary>
         /// Adds a <see cref="TCost"/> to this cost and returns a new <see cref="TCost"/>

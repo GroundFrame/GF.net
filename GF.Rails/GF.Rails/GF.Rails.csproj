@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\Network\_Classes\ControlNode.cs~RF77b1e512.TMP" />
-    <None Remove="src\Network\_Structs\TemporalPeriod.cs~RF9be04950.TMP" />
+    <None Remove="Network\_Classes\ControlNode.cs~RF77b1e512.TMP" />
+    <None Remove="Network\_Structs\TemporalPeriod.cs~RF9be04950.TMP" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\GF.Common\GF.Common\GF.Common.csproj" />
     <ProjectReference Include="..\..\GF.Graph\GF.Graph\GF.Graph.csproj" />
   </ItemGroup>
 

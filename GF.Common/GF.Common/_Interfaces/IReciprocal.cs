@@ -22,11 +22,8 @@ namespace GF.Common
         /// <summary>
         /// Calculates the reciprocal value from the supplied value
         /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static T CalculateReciprocalValue(T value)
-        {
-            return default;
-        }
+        /// <param name="value">The initial value to reciprocate</param>
+        /// <returns><see cref="T"/> containing the reciprocal value</returns>
+        //public static abstract T CalculateReciprocalValue(T value);
     }
 }

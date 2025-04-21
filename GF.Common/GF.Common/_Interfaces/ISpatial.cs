@@ -6,8 +6,8 @@ namespace GF.Common
 {
     public interface ISpatial
     {
-        public float X { get; }
-        public float Y { get; }
+        public double X { get; }
+        public double Y { get; }
 
         /// <summary>
         /// Gets the distance to another spatial

@@ -12,29 +12,29 @@ namespace GF.Common
         /// <summary>
         /// Gets the latitude
         /// </summary>
-        public float Latitude { get; private set; }
+        public double Latitude { get; private set; }
 
         /// <summary>
         /// Gets the longitude
         /// </summary>
-        public float Longitude { get; private set; }
+        public double Longitude { get; private set; }
 
         /// <summary>
         /// Gets the X coordinate.
         /// </summary>
-        public readonly float X { get { return this.Longitude; } }
+        public readonly double X { get { return this.Longitude; } }
 
         /// <summary>
         /// Gets the Y coordinate
         /// </summary>
-        public readonly float Y { get { return this.Latitude; } }
+        public readonly double Y { get { return this.Latitude; } }
 
         /// <summary>
         /// Instantiates a new <see cref="Coordinates"/>
         /// </summary>
         /// <param name="latitude">The latitude</param>
         /// <param name="longitude">The longitude</param>
-        public Coordinates(float latitude, float longitude)
+        public Coordinates(double latitude, double longitude)
         {
             if (latitude < -90 || latitude > 90)
             {
