@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GF.Rails.Network
 {
-    public interface ISignalBox : ITemporal<SignalBoxId, SignalBoxHistory>
+    public enum PointOrSwitchCondition
     {
+        Normal = 0,
+        Reversed = 1
     }
 }
