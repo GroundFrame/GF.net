@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GF.Graph", "GF.Graph", "{26
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GF.Graph", "GF.Graph\GF.Graph\GF.Graph.csproj", "{51087407-1609-4FF9-AC1E-9E2B2C59761C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GF.Rails.UnitTests", "GF.Rails\GF.Rails.UnitTests\GF.Rails.UnitTests.csproj", "{E605EF85-C27A-4813-A253-04A39BCD0081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{51087407-1609-4FF9-AC1E-9E2B2C59761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51087407-1609-4FF9-AC1E-9E2B2C59761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51087407-1609-4FF9-AC1E-9E2B2C59761C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E605EF85-C27A-4813-A253-04A39BCD0081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E605EF85-C27A-4813-A253-04A39BCD0081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E605EF85-C27A-4813-A253-04A39BCD0081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E605EF85-C27A-4813-A253-04A39BCD0081}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{FA67E281-8A8E-4B6A-AB00-4DCD8BC52303} = {9A37E58E-376D-4D16-A6AF-189CB09C5EFB}
 		{65305EB0-65F9-4443-BA0C-AD5B0990F72A} = {9315D033-A943-4720-A0B6-9B4CBA6EBD07}
 		{51087407-1609-4FF9-AC1E-9E2B2C59761C} = {26287996-3BEB-4F3D-B32D-1E66177D2CE4}
+		{E605EF85-C27A-4813-A253-04A39BCD0081} = {9315D033-A943-4720-A0B6-9B4CBA6EBD07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F4CFFE0-A160-42C2-93A1-72361769887C}

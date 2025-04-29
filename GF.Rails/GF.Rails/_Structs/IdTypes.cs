@@ -48,6 +48,9 @@ namespace GF.Rails
     public partial struct SignalBoxId { }
 
     [StronglyTypedId]
+    public partial struct SignalHeadId { }
+
+    [StronglyTypedId]
     public partial struct PersonId { }
 
 }

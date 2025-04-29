@@ -88,6 +88,11 @@ namespace GF.Rails
             return dateYMV.Value >= this._StartDateYMDV.Value && dateYMV.Value <= cleanEndYMV.Value;
         }
 
+        public bool Overlaps(DateTime startDate, DateTime? endDate)
+        {
+            return this.Overlaps(new TemporalPeriod(startDate, endDate));
+        }
+
         public bool Overlaps(TemporalPeriod period)
         {
             var maxEndPeriod = Math.Max(this._EndDateYMDV.Value, period._EndDateYMDV.Value);

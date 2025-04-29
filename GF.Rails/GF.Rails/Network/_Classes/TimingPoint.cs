@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using GF.Rails;
 using GF.Rails.Operations;
+using GF.Rails.Network.SandT;
 
 namespace GF.Rails.Network
 {
@@ -59,8 +60,8 @@ namespace GF.Rails.Network
         /// <summary>
         /// Associates a signal block to this timing point
         /// </summary>
-        /// <param name="signalBlock">The <see cref="SignalBlock"/> to associate</param>
-        public void AddAssociatedSignalBlock(SignalBlock signalBlock)
+        /// <param name="signalBlock">The <see cref="ISignalBox"/> to associate</param>
+        public void AddAssociatedSignalBlock(ISignalBlock signalBlock)
         {
             this._associatedSignalBlockIds.Add(signalBlock.Id);
         }
@@ -68,8 +69,8 @@ namespace GF.Rails.Network
         /// <summary>
         /// Removes a signal block to this timing point
         /// </summary>
-        /// <param name="signalBlock">The <see cref="SignalBlock"/> to remove</param>
-        public void RemoveAssociatedSignalBlock(SignalBlock signalBlock)
+        /// <param name="signalBlock">The <see cref="ISignalBlock"/> to remove</param>
+        public void RemoveAssociatedSignalBlock(ISignalBlock signalBlock)
         {
             this._associatedSignalBlockIds.Remove(signalBlock.Id);
         }
@@ -132,12 +133,13 @@ namespace GF.Rails.Network
             return this.Coordinates.DistanceTo(node.Coordinates);
         }
 
-        public IEnumerable<SignalBlock> GetAssociatedSignalBlocks(Railway network)
+        public IEnumerable<ISignalBlock> GetAssociatedSignalBlocks(Railway network)
         {
-            return network.SignalBlocks.ToList().Where(sb => this._associatedSignalBlockIds.Any(asb => asb == sb.Id));
+            throw new NotImplementedException();
+            //return network.SignalBoxes.ToList().Where(sb => this._associatedSignalBlockIds.Any(asb => asb == sb.Id));
         }
 
-        public IEnumerable<SignalBlock> GetAssociatedPlatforms(Railway network)
+        public IEnumerable<ISignalBlock> GetAssociatedPlatforms(Railway network)
 
         {
             return this.GetAssociatedSignalBlocks(network).Where(asb => !string.IsNullOrEmpty(asb.PlatformCode));

@@ -3,7 +3,7 @@ using GF.Graph;
 using GF.Rails.Operations;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using GF.Rails.Network.SandT;
 
 namespace GF.Rails.Network
 {
@@ -36,13 +36,13 @@ namespace GF.Rails.Network
         /// <summary>
         /// Associates a signal block to this timing point
         /// </summary>
-        /// <param name="signalBlock">The <see cref="SignalBlock"/> to associate</param>
-        public void AddAssociatedSignalBlock(SignalBlock signalBlock);
+        /// <param name="signalBlock">The <see cref="ISignalBlock"/> to associate</param>
+        public void AddAssociatedSignalBlock(ISignalBlock signalBlock);
         /// <summary>
         /// Removes a signal block to this timing point
         /// </summary>
-        /// <param name="signalBlock">The <see cref="SignalBlock"/> to remove</param>
-        public void RemoveAssociatedSignalBlock(SignalBlock signalBlock);
+        /// <param name="signalBlock">The <see cref="ISignalBlock"/> to remove</param>
+        public void RemoveAssociatedSignalBlock(ISignalBlock signalBlock);
 
         /// <summary>
         /// Adds a new history item to this place.
@@ -120,13 +120,13 @@ namespace GF.Rails.Network
         /// </summary>
         /// <param name="network">The source <see cref="Railway"/></param>
         /// <returns></returns>
-        public IEnumerable<SignalBlock> GetAssociatedSignalBlocks(Railway network);
+        public IEnumerable<ISignalBlock> GetAssociatedSignalBlocks(Railway network);
 
         /// <summary>
         /// Gets the platforms assoicated with this timing point
         /// </summary>
         /// <param name="network">The source <see cref="Railway"/></param>
         /// <returns></returns>
-        public IEnumerable<SignalBlock> GetAssociatedPlatforms(Railway network);
+        public IEnumerable<ISignalBlock> GetAssociatedPlatforms(Railway network);
     }
 }
